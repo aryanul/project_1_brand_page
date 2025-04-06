@@ -12,6 +12,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
   
 }
 
@@ -25,17 +26,81 @@ nav{
 }
 
 nav ul{
+  cursor: pointer;
   display: flex;
   list-style: none;
   gap: 24px;
 }
 
-button{
+.login_button{
   all: unset;
   padding: 6px 16px;
   height: 32px;
   background: var(--red);
   color: white;
   font-weight: 500;
+  cursor: pointer;
+}
+
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: calc(100vh - 72px);
+  
+}
+
+.hero h1{
+  font-weight: 800;
+  font-size: 108px;
+  line-height: 102px;
+  margin-bottom: 15px;
+}
+
+.hero p{
+  font-weight: 500;
+  color: var(--grey);
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.hero-btn{
+  display: flex;
+  gap: 40px;
+}
+
+.primary_btn{
+  all: unset;
+  padding: 6px 16px;
+  height: 32px;
+  background: var(--red);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.secondary_btn{
+  all: unset;
+  padding: 6px 16px;
+  height: 32px;
+  background: transparent;
+  color: var(--grey);
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--grey);
+}
+
+.shopping p{
+  font-size: 14px;
+}
+
+.brand-images{
+  display: flex;
+  gap: 20px;
+}
+
+.brand-images img{
   cursor: pointer;
 }

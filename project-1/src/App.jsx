@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navigation from "./components/Navigation";
+import HeroSection from "./components/Hero";
 import "./App.css";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <>
       <div className="App">
         <Navigation />
+        <HeroSection />
       </div>
     </>
   );
